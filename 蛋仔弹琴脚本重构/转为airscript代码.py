@@ -15,9 +15,9 @@ class 转airscript代码类:
         所有的任务=''
         for 第几个轨道,轨道 in enumerate(音乐时间轴,start=1):
             第几个线程任务=f'''def task{第几个轨道}():
-        with concurrent.futures.ThreadPoolExecutor() as executor{第几个轨道}:
-            pass
-    '''
+    with concurrent.futures.ThreadPoolExecutor() as executor{第几个轨道}:
+        pass
+'''
             for 第几个音符,音符 in enumerate(轨道):
                 调,时间=音符
                 try:
@@ -50,7 +50,7 @@ thread{i}.join()
             总代码 += f'        executor1.submit(click, {line[0]}, {line[1]})\n'
         总代码+=self.处理结尾()
         return 总代码
-    def 测试点击所有坐标(self,时间=0.05) :
+    def 测试点击所有坐标(self,时间=0.5) :
         开头 = f'''def task1():
     with concurrent.futures.ThreadPoolExecutor() as executor1:
         pass
@@ -86,7 +86,7 @@ def 测试():
     # print('测试点击所有坐标测试完成')
     转airscript代码测试类.输出到记事本(转airscript代码测试类.处理弹琴代码())
     print('测试处理弹琴代码完成')
-    print('转airscript代码测试完成')
+    # print('转airscript代码测试完成')
 if __name__ == '__main__':
     测试()
     
